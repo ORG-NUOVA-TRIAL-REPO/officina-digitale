@@ -1,0 +1,28 @@
+# Responsabili di zona.
+#
+# Questo file dice a GitHub chi deve essere chiamato ad approvare quando una
+# proposta di modifica tocca certi file.
+#
+# Un team indicato qui viene ignorato in silenzio se non ha almeno permesso
+# Write sul repository, oppure se ha visibilita' segreta.
+
+# Regola di riserva: se nessuna riga piu' specifica corrisponde, vale questa.
+*                       @Giobebbe
+
+# Calcolo delle fatture: la parte che tocca i soldi.
+/src/fatture.js         @ORG-NUOVA-TRIAL-REPO/prodotto
+/test/                  @ORG-NUOVA-TRIAL-REPO/prodotto
+
+# Anagrafica clienti.
+/src/clienti.js         @ORG-NUOVA-TRIAL-REPO/prodotto
+
+# Listino prezzi: lo decide il commerciale, non chi scrive codice.
+/listino.csv            @ORG-NUOVA-TRIAL-REPO/commerciale
+
+# Documenti aziendali.
+/docs/                  @Giobebbe
+/TEAM.md                @Giobebbe
+
+# Sicurezza e automazioni.
+/SECURITY.md            @Giobebbe
+/.github/workflows/     @Giobebbe
